@@ -1,26 +1,25 @@
 package universitas;
 
 public class Mahasiswa {
-    String nama;
-    String npm;
-    String prodi;
-    
-    public String getNama(){
-       return nama;  
-   }
-    public String getNpm(){
-       return npm;  
-   }
-    public String getProdi(){
-       return prodi;  
-   }
-    
-    public void setnama (String nama){
-       nama = nama;
-   }
-    
-    public void setnpm (String npm){
-       npm = npm;
-   }
-    
-}
+    private int npm;
+    private String nama;
+    private String prodi;
+
+    // constructor
+    Mahasiswa(int npm, String nama, String prodi) {
+        this.npm = npm;
+        this.nama = nama;
+        this.prodi = prodi;
+    }
+
+    // Accessor method to get sid and name
+    public int getNpm() {
+        return npm;
+    }
+    public String getNama() {
+        return nama;
+    }
+    public String getProdi() {
+        return prodi;
+    }
+}  
